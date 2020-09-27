@@ -80,6 +80,11 @@ a{
   font-size: 20px;
 }
 
+.mob-wrapper {
+  display: none;
+}
+
+
 
 
 /* Tablet View */
@@ -93,17 +98,16 @@ a{
     display: block;
   }
   
-  header {
-    display: block;
-    text-align: center;
-  }
-
   .header-container {
     position: relative;
   }
 
   .container{
     padding-top: 40px;
+  }
+
+  nav {
+    display: none;
   }
 
   nav a {
@@ -118,7 +122,24 @@ a{
     margin-left: 0;
   }
 
-  
+  .mob-wrapper{
+    display: block;
+    padding-right: 30px;
+  }
+
+  .mob-nav{
+    display:none;
+    position: absolute;
+    padding-top: 10px;
+  }
+
+  .navbutton {
+    display: block;
+    background-color: coral;
+    padding: 15px 30px;
+    margin-left: -70px;
+    text-align: center;
+  }
 }
 /* Mobile View */
 @media(max-width: 500px){
